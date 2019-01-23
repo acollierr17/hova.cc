@@ -10,15 +10,42 @@ If you find any issues with the bot, please let me know within **72 hours** so t
 Any new updates regarding the core functionality of the bot will be made at no charge if requested. However, any new features will be charged based on the requested features.
 
 ## Bot Permissions
-By default, the bot is assigned the permissions listed below. It is only assigned the permissions it needs. Keep in mind removing some of these permissions may interfere with the functionality of the bot, so it's recommended to keep the assigned permissions unchanged.
+By default, the bot is assigned the `Administrator [ADMINISTRATOR]` permission. Reason being, some functionality, such as bulk deleting messages using the `-embed` command and proper channel management with the ticket system. The bot only will have the permissions it needs for full functionality. It is recommended to keep the permission unchanged.
 
-- Manage Channels `MANAGE_CHANNELS`
-- View Channels `VIEW_CHANNELS`
-- Send Messages `SEND_MESSAGES`
-- Manage Messages `MANAGE_MESSAGES`
-- Embed Links `EMBED_LINKS`
-- Read Message History `READ_MESSAGE_HISTORY`
+- Administrator `ADMINISTRATOR`
 
+## Embed Command
+With this bot, you have the ability to create embeds and post them a channel of your choice. Simply type in the `-embed` command and follow the process.
+
+For colors, you may refer to the list below. You may type in the color in whatever fashion you want, but make sure it's on this list and you include an `_` in the color, or it's a valid [hexidecimal color](https://www.mathsisfun.com/hexadecimal-decimal-colors.html).
+```
+[
+  'DEFAULT',
+  'AQUA',
+  'GREEN',
+  'BLUE',
+  'PURPLE',
+  'LUMINOUS_VIVID_PINK',
+  'GOLD',
+  'ORANGE',
+  'RED',
+  'GREY',
+  'DARKER_GREY',
+  'NAVY',
+  'DARK_AQUA',
+  'DARK_GREEN',
+  'DARK_BLUE',
+  'DARK_PURPLE',
+  'DARK_VIVID_PINK',
+  'DARK_GOLD',
+  'DARK_ORANGE',
+  'DARK_RED',
+  'DARK_GREY',
+  'LIGHT_GREY',
+  'DARK_NAVY',
+  'RANDOM',
+]
+```
 
 ## Setup
 When you invite the bot to your server, you will need to set up a few things
@@ -27,7 +54,7 @@ When you invite the bot to your server, you will need to set up a few things
 - The channel where ticket logs will be posted
 - The role that will be added to a ticket upon creation
 
-###The prefix
+### The prefix
 The default bot prefix is `-`. But you may change it at any time by using the `setprefix` command. Usage is below:
 ```
 -setprefix <prefix>
