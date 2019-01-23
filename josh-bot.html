@@ -1,0 +1,45 @@
+<h1>Josh Bot</h1>
+<p>This is a simple guide on how the Josh Bot works and is structured. Down below, you'll find exactly how to set up the bot for tickets and ticket management as well as other commands of the bot.</p>
+<h2>Disclaimer</h2>
+<p>The source code for this bot is not to be resold, redistributed or modified and claimed as your own. You may remodify the source code as you wish, but I will not be held liable for anything that breaks due to a change you made.</p>
+<p>If you find any issues with the bot, please let me know within <strong>72 hours</strong> so they may be fixed at no charge at all. Anything afterward will be charged accordingly.</p>
+<p>Any new updates regarding the core functionality of the bot will be made at no charge if requested. However, any new features will be charged based on the requested features.</p>
+<h2>Bot Permissions</h2>
+<p>By default, the bot is assigned the permissions listed below. It is only assigned the permissions it needs. Keep in mind removing some of these permissions may interfere with the functionality of the bot, so it's recommended to keep the assigned permissions unchanged.</p>
+<ul>
+<li>Manage Channels <code>MANAGE_CHANNELS</code></li>
+<li>View Channels <code>VIEW_CHANNELS</code></li>
+<li>Send Messages <code>SEND_MESSAGES</code></li>
+<li>Manage Messages <code>MANAGE_MESSAGES</code></li>
+<li>Embed Links <code>EMBED_LINKS</code></li>
+<li>Read Message History <code>READ_MESSAGE_HISTORY</code></li>
+</ul>
+<h2>Setup</h2>
+<p>When you invite the bot to your server, you will need to set up a few things</p>
+<ul>
+<li>Your desired prefix</li>
+<li>The category will ticket channels will go</li>
+<li>The channel where ticket logs will be posted</li>
+<li>The role that will be added to a ticket upon creation</li>
+</ul>
+<p>###The prefix
+The default bot prefix is <code>-</code>. But you may change it at any time by using the <code>setprefix</code> command. Usage is below:</p>
+<pre><code>-setprefix &lt;prefix&gt;
+</code></pre>
+<p>The bot's mention <code>(@Josh Bot#8286)</code> may also be used as a prefix for commands:</p>
+<pre><code>@Josh Bot#8286 ping
+</code></pre>
+<p>If you ever forget the bot's prefix, simply mention it to see what it is.</p>
+<h3>Tickets category</h3>
+<p>All new tickets will be posted under a category at your choosing. By default, the category the bot will search for is <code>Tickets</code>. You may set a new tickets category by using the <code>setcategory</code> command.</p>
+<pre><code>-setcategory &lt;category&gt;
+</code></pre>
+<h3>Tickets logs</h3>
+<p>When a ticket is created or closed, it will be logged to a set ticket logs channel. By default, the channel the bot will search for is <code>ticket-logs</code>. You may set a new tickets logs channel by using the <code>setlogs</code> command.</p>
+<pre><code>-setlogs &lt;channel&gt;
+</code></pre>
+<h3>Tickets staff role</h3>
+<p>A staff role is to be set when using tickets. This role will automatically be added to the ticket when it's created. However, server admins (users who have the <code>Manage Server [MANAGE_GUILD]</code>) will be added automatically. You may add or remove the tickets staff role by using the <code>role</code> command.</p>
+<pre><code>-role &lt;add/remove&gt; &lt;role&gt;
+</code></pre>
+<p>If you wish to view all server admins and the staff role, you may run the <code>roles</code> command. It'll display an embedded of said information.</p>
