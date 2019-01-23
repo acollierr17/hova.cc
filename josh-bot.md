@@ -55,4 +55,4 @@ A staff role is to be set when using tickets. This role will automatically be ad
 ```
 -role <add/remove> <role>
 ```
-If you wish to view all server admins and the staff role, you may run the `roles` command. It'll display an embedded of said information.
+If you wish to view all server admins and the staff role, you may run the `roles` command. It'll display an embedded message of said information.
