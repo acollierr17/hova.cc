@@ -40,7 +40,7 @@ Here is the testimonial I received for this bot:
 
 ## Josh Bot
 
-Just last week, a friend of mine asked me if I could develop a bot for some of his Discord servers. Another thing you will find being a pro with my bot is I develop my bots for scale. This meaning it can be added to multiple guilds and be configured to the guild's liking if need be.
+Just last week, a friend of mine asked me if I could develop a bot for some of his Discord servers. Another thing you will find being a pro with my bots is I develop them for scale. This meaning it can be added to multiple guilds and be configured to the guild's liking if need be.
 
 Josh here asked for me to create basic ticket functions and the ability to send messages in embeds.
 
