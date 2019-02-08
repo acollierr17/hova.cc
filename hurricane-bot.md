@@ -41,7 +41,7 @@ Once you are on the *Live* tab, you will see the Client ID and Secret. Click *Sh
 
 ![](https://i.imgur.com/fR0yMJo.png)
 
-Now that you have these credentials, run the `paypalconfig` command in a channel on Discord. A wizard will begin where you will enter the Client ID and Secret. Once they have been successfully entered, you should be almost good to go.
+Now that you have these credentials, run the `paypalconfig` command in a channel on Discord. The bot will then DM you with a wizard to being configuring the PayPal API with the Client ID and Client Secret. Once they have successfully been entered, you should be almost good to go. Again, please refer to the note above the image.
 
 The last step is to set up the merchant email/PayPal account that will be associated with invoicing. The account that you set **must** be the same as the one displayed when you created the REST API app above. To set the email, run this command:
 ```
