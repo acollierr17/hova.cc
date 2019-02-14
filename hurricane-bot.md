@@ -23,9 +23,19 @@ Once this command is executed, it will go through the process to create a draft 
 
 When the invoice is paid, the bot will update the message to reflect the invoice status. This feature makes it so managers don't specifically have to preside over the creation of an invoice.
 
-To use this feature, a Developer Application will have to be created via the Paypal Developer Dashboard. Continue on in this section to find out more on how to do this.
+To use this feature, a REST API Application will have to be created as well as a Live account via the Paypal Developer Dashboard. Continue on in this section to find out more on how to do this.
 
-To create a new Application, proceed over to the [Developer Dashboard](https://developer.paypal.com/developer/applications). Once you are there, scroll down to the *REST API apps* section. You will need to create this application as this is how the bot interacts with PayPal. From there, click *Create App*
+To create a Braintree SDK - Live account, proceed over to the [Developer Dashboard](https://developer.paypal.com/developer/applications). Once you're there, scroll down to the *Express Checkout via Braintree SDK - Live Account* section. You will need to create a Live account and generate Live Access Tokens for full functionality with the REST Application which will be discussed below. Click *Generate Live Access Token* to continue.
+
+![](https://i.imgur.com/wNNiIho.png)
+
+On the next page, choose the account which you will be using to create the Live Access Token for. After that, you will land on this page:
+
+![](https://i.imgur.com/XYZMlww.png)
+
+This is all you need to do here.
+
+To create a new REST API application, proceed over to the [Developer Dashboard](https://developer.paypal.com/developer/applications). Once you are there, scroll down to the *REST API apps* section. You will need to create this application as this is how the bot interacts with PayPal. From there, click *Create App*
 
 ![](https://i.imgur.com/amj0Smp.png)
 
