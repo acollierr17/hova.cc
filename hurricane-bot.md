@@ -80,9 +80,9 @@ When a new ticket is created, multiple things happen at once:
 - All roles are added associated with the ticket type as well as users in the `Management 💼` role by default and the configured global role
 - A wizard begins where the client can proceed with their ticket
 
-At anytime during the wizard, the client can cancel the ticket by typing `cancel`. However, for efficiency of the database, the ticket *won't* be submitted to the database until *after* the user types `finish` (or any further notes) at the end of the wizard.
+At anytime during the wizard, the client can cancel the ticket by using the `cancel` command. This will proceed to close the ticket after 10 seconds and delete the ticket from the database.
 
-If a user types in `cancel`, the ticket will automatically be deleted after 10 seconds. However, when closing a ticket (tickets can only be closed if they exist in the database) there are two options:
+For closing a ticket that's already been submitted (tickets can only be closed if they exist in the database) there are two options:
 
 - Graceful closing of the ticket using the `close` command*
 - Forceful closing of the ticket using the `fclose` command*
