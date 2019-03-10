@@ -17,6 +17,18 @@ By default, the bot is assigned the `Administrator [Administrator]` permission. 
 ## Setup
 To set up the bot, there are a few things you must do.
 
+### Setting Up & Running The Bot (Read the sections below this first)
+You will need to make sure you have Node installed. Head to this website and downloaded the `LTS` version. Once that process has been completed, you may continue on.
+
+To build the bot's database and run the bot, you will need to run the commands below (the same folder as the `package.json` file)
+```bash
+npm install --global pm2 # pm2 is a process management tool
+npm install # wait until install is finished
+node db/dbInit -f # this will build the database and its tables
+pm2 start vendetta.json # this is to start the bot's process
+```
+You can stop the bot at anytime by running `pm2 stop vendetta.json`.
+
 ### Environment File
 Included in the file is a `.env.example` file. This file contains the bot's token and the database information. Add in the bot token you created in the Developer Portal after `CLIENT_TOKEN=` and the bot owner account's ID after `OWNER=`.
 
@@ -73,7 +85,7 @@ The bot comes with a few moderation commands. Moderation commands can only be ac
 - `unban <user> [reason]` Unban a user with an optional reason
 - `lock <time> [reason]` Lock the channel the command was ran in with a timeframe with an optional reason (moderators bypass this)
 - `unlock [reason]` Unlock the channel the command was ran in with an optional reason
-- `prune <amount> [type]` Prune a number of messages in the channel the command was ran in with an optional filter
+- `prune <amount> [type]` Prune a number of messages0 in the channel (max. 200) the command was ran in with an optional filter
 
 ![Example of a moderation action with a thumbnail](https://i.imgur.com/TyKWfbp.gif)
 
