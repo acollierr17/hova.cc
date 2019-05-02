@@ -86,3 +86,13 @@ If you forget the prefix of the bot, you can simply mention your bot (ex. `@Stre
 You can also view the bot's prefix via the `prefix` command.
 
 If you wish to change the bot's prefix, do `prefix <prefix>`.
+
+### Stream Mentions
+You may configure the bot to do `@everyone`, `@here` or `@Role` (where `Role` is the role you wish to ping) when a new stream goes live.
+
+![The `Stream Mentions` role being pinged](https://i.imgur.com/wxWq4QK.png)
+
+- To ping `@everyone` do `role everyone`
+- To ping `@here` do `role here`
+- To ping a specific role do `role <role>` where `<role>` is the role you want to be pinged
+- To remove the set role, do `role none`
