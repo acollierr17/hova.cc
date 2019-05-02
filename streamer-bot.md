@@ -50,7 +50,7 @@ To start the bot, simply run the command `pm2 start streamer.json`. Here are som
 You can configure various aspects of the bot such as:
 - The channel for live notifications to be sent to
 - An optional tag for notifications (a specific role, `@everyone` or `@here`)
-- The message for live notifications
+- Toggling if live notifications should be sent or not
 
 ### Commands
 Here is the `help` menu where you can see overall information about the bot:
@@ -69,14 +69,6 @@ If the channel does not exist whatsoever, then the bot will respond letting you 
 You can set the channel where you wish for notifications to be posted. By default, the bot searches for a `#notifications` channel. But you can easily change this by doing `channel <channel>`.
 
 How notification will work is every 5 seconds, the bot will check the status of all streamers. If a user has gone live within last 2 minutes, a notification will be posted in notifications channel. Otherwise, the bot will not post the user is live if they're already live or not live at all.
-
-### Custom Message
-You can set a custom message to be used when a streamer goes live. When setting a message, you must include these 2 parameters:
-
-- `{{user}}` this will be replaced with the username of the streamer
-- `{{channel}}` this will be replaced with the URL of the streamer's channel
-
-You can view the current message by doing `message` or set a new one doing `message <message>`.
 
 ### Toggle Notifications
 If you wish to toggle notifications, you can use `toggle`. This will not post any notifications going forward until you run the command again.
